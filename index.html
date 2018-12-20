@@ -224,32 +224,24 @@
         
           
           <li class="menu-item menu-item-home">
-    <a href="/主页/" rel="section">
+    <a href="/home/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
   </li>
         
         
         
           
-          <li class="menu-item menu-item-about">
-    <a href="/关于/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
   </li>
         
         
         
           
           <li class="menu-item menu-item-tags">
-    <a href="/标签/" rel="section">
+    <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
-    <a href="/分类" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />分类</a>
   </li>
         
         
@@ -258,6 +250,22 @@
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-resources">
+    <a href="/resources" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-download"></i> <br />资源</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
   </li>
 
       
@@ -292,6 +300,204 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/20/code/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="梅锟">
+      <meta itemprop="description" content="我为皮皮虾带盐~">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sandrainjoy">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/20/code/" itemprop="url">
+                  hexo常用命令笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-20 15:43:51 / 修改时间：15:10:57" itemprop="dateCreated datePublished" datetime="2018-12-20T15:43:51+08:00">2018-12-20</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">-hexo</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>hexo<br>npm install hexo -g #安装<br>npm update hexo -g #升级<br>hexo init #初始化</p>
+</blockquote>
+<h1 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h1><blockquote>
+<p>简写<br>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo p == hexo publish<br>hexo g == hexo generate#生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy#部署</p>
+</blockquote>
+<h1 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h1><blockquote>
+<p>服务器<br>hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP</p>
+</blockquote>
+<blockquote>
+<p>hexo clean #清除缓存 网页正常情况下可以忽略此条命令<br>hexo g #生成静态网页<br>hexo d #开始部署</p>
+</blockquote>
+<h1 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h1><blockquote>
+<p>hexo generate #使用 Hexo 生成静态文件快速而且简单<br>hexo generate –watch #监视文件变动</p>
+</blockquote>
+<h1 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h1><blockquote>
+<p>两个命令的作用是相同的<br>hexo generate –deploy<br>hexo deploy –generate</p>
+</blockquote>
+<blockquote>
+<p>hexo deploy -g<br>hexo server -g</p>
+</blockquote>
+<p>草稿</p>
+<blockquote>
+<p>hexo publish [layout] <title></title></p>
+</blockquote>
+<p>模版</p>
+<blockquote>
+<p>hexo new “postName” #新建文章<br>hexo new page “pageName” #新建页面<br>hexo generate #生成静态页面至public目录<br>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br>hexo deploy #将.deploy目录部署到GitHub</p>
+</blockquote>
+<blockquote>
+<p>hexo new [layout] <title><br>hexo new photo “My Gallery”<br>hexo new “Hello World” –lang tw</title></p>
+</blockquote>
+<p>变量    描述</p>
+<blockquote>
+<p>layout    布局<br>title    标题<br>date    文件建立日期<br>title: 使用Hexo搭建个人博客<br>layout: post<br>date: 2014-03-03 19:07:43<br>comments: true<br>categories: Blog<br>tags: [Hexo]<br>keywords: Hexo, Blog<br>description: 生命在于折腾，又把博客折腾到Hexo了。给Hexo点赞。<br>模版（Scaffold）<br>hexo new photo “My Gallery”</p>
+</blockquote>
+<p>变量    描述<br>layout    布局<br>title    标题<br>date    文件建立日期<br>设置文章摘要<br>以上是文章摘要
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/12/20/code/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -354,16 +560,46 @@
                 
               
 
-              <time title="创建时间：2018-11-02 15:43:51 / 修改时间：15:38:40" itemprop="dateCreated datePublished" datetime="2018-11-02T15:43:51+08:00">2018-11-02</time>
+              <time title="创建时间：2018-11-02 15:43:51" itemprop="dateCreated datePublished" datetime="2018-11-02T15:43:51+08:00">2018-11-02</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-12-20 15:16:24" itemprop="dateModified" datetime="2018-12-20T15:16:24+08:00">2018-12-20</time>
               
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/文章/" itemprop="url" rel="index"><span itemprop="name">-文章</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -394,7 +630,10 @@
       
         
           
-            <p>从前初识这世间<br>万般流连<br>看着天边似在眼前<br>也甘愿赴汤蹈火去走它一遍<br>如今走过这世间<br>万般流连<br>翻过岁月不同侧脸<br>措不及防闯入你的笑颜<br>我曾难自拔于世界之大<br>也沉溺于其中梦话<br>不得真假 不做挣扎 不惧笑话<br>我曾将青春翻涌成她<br>也曾指尖弹出盛夏<br>心之所动 且就随缘去吧<br>晚风吹起你鬓间的白发<br>抚平回忆留下的疤<br>你的眼中 明暗交杂 一笑生花<br>暮色遮住你蹒跚的步伐<br>走进床头藏起的画<br>画中的你 低着头说话<br>我仍感叹于世界之大<br>也沉醉于儿时情话<br>不剩真假 不做挣扎 无谓笑话<br>我终将青春还给了她<br>连同指尖弹出的盛夏<br>心之所动 就随风去了<br>以爱之名 你还愿意吗</p>
+            <p>&lt; div align=center&gt;</p>
+<blockquote>
+<p>从前初识这世间<br>万般流连<br>看着天边似在眼前<br>也甘愿赴汤蹈火去走它一遍<br>如今走过这世间<br>万般流连<br>翻过岁月不同侧脸<br>措不及防闯入你的笑颜<br>我曾难自拔于世界之大<br>也沉溺于其中梦话<br>不得真假 不做挣扎 不惧笑话<br>我曾将青春翻涌成她<br>也曾指尖弹出盛夏<br>心之所动 且就随缘去吧<br>晚风吹起你鬓间的白发<br>抚平回忆留下的疤<br>你的眼中 明暗交杂 一笑生花<br>暮色遮住你蹒跚的步伐<br>走进床头藏起的画<br>画中的你 低着头说话<br>我仍感叹于世界之大<br>也沉醉于儿时情话<br>不剩真假 不做挣扎 无谓笑话<br>我终将青春还给了她<br>连同指尖弹出的盛夏<br>心之所动 就随风去了<br>以爱之名 你还愿意吗</p>
+</blockquote>
 
           
         
@@ -476,14 +715,42 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -520,7 +787,8 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
